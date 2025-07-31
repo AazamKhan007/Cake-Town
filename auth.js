@@ -21,7 +21,12 @@ let currentUserEmail = null;
 let currentUserFullName = null;
 
 
-const isAuthPage = window.location.pathname.endsWith('/index.html') || window.location.pathname === '/';
+const isAuthPage =
+  window.location.pathname.endsWith('/index.html') ||
+  window.location.pathname.endsWith('/Cake-Town/') ||
+  window.location.pathname === '/Cake-Town' ||
+  window.location.pathname === '/' ||
+  window.location.pathname.endsWith('/');
 
 
 const authScreen = isAuthPage ? document.getElementById('authScreen') : null;
@@ -112,16 +117,8 @@ async function storeUserProfile(uid, email, fullName = '') {
 
 if (isAuthPage) {
     
-        console.log("Auth.js loaded on auth page.");
-
     if (loginTab && signupTab && loginForm && signupForm) {
-
- console.log("Login button found."); // Add this line
-
         loginTab.addEventListener('click', () => {
-
-            console.log("Login tab clicked. Switching to login form.");
-
             loginTab.classList.add('active');
             signupTab.classList.remove('active');
             loginForm.classList.remove('hidden');
@@ -373,7 +370,7 @@ if (auth) {
             } else {
                 
                 console.log("On auth page (index.html) and user is logged in. Redirecting to home.html.");
-                window.location.href = 'home.html';
+                window.location.href = './home.html';
             }
 
         } else {
@@ -386,7 +383,7 @@ if (auth) {
             
             if (!isAuthPage) {
                 console.log("On non-auth page and user is not logged in. Redirecting to index.html.");
-                window.location.href = 'index.html';
+                window.location.href = './index.html';
             } else {
                 
                 console.log("On auth page (index.html) and user is not logged in. Ensuring auth screen is visible.");
