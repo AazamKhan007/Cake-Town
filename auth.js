@@ -112,8 +112,16 @@ async function storeUserProfile(uid, email, fullName = '') {
 
 if (isAuthPage) {
     
+        console.log("Auth.js loaded on auth page.");
+
     if (loginTab && signupTab && loginForm && signupForm) {
+
+ console.log("Login button found."); // Add this line
+
         loginTab.addEventListener('click', () => {
+
+            console.log("Login tab clicked. Switching to login form.");
+
             loginTab.classList.add('active');
             signupTab.classList.remove('active');
             loginForm.classList.remove('hidden');
