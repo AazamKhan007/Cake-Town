@@ -802,15 +802,6 @@ section{
 }
 
 
-
-
-
-
-
-
-
-
-
 .review .view-all {
     position: absolute;
     top: 1rem;
@@ -2468,6 +2459,11 @@ section{
 
 /*-------------------- Login and signup---------------------------------- */
 /* Animated gradient background */
+
+.hidden {
+  display: none !important;
+}
+
 .login-bg {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
