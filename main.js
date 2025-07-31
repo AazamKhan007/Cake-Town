@@ -58,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
 // ***************************Home Banner container******************
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide'); // Ensure these elements exist in your HTML

@@ -15,17 +15,30 @@
 </head>
 <body>
 
+
+<div class="login-bg">
+  <div class="bubble bubble1"></div>
+  <div class="bubble bubble2"></div>
+  <div class="bubble bubble3"></div>
+  <div class="bubble bubble4"></div>
+  <div class="bubble bubble5"></div>
+  <!-- Example SVG cupcake -->
+  <svg class="cupcake" width="60" height="60" viewBox="0 0 60 60">
+    <ellipse cx="30" cy="45" rx="18" ry="10" fill="#fcd5ce"/>
+    <ellipse cx="30" cy="35" rx="15" ry="8" fill="#ffb6b9"/>
+    <ellipse cx="30" cy="28" rx="10" ry="5" fill="#fff"/>
+    <circle cx="30" cy="22" r="3" fill="#b5ead7"/>
+  </svg>
+
+    <div class="sprinkle sprinkle1"></div>
+    <div class="sprinkle sprinkle2"></div>
+    <div class="sprinkle sprinkle3"></div>
+    <div class="sprinkle sprinkle4"></div>
+    <div class="sprinkle sprinkle5"></div>
+</div>
+
     
     <div id="authScreen" class="auth-screen">
-        
-        <video autoplay muted loop playsinline class="video-background">
-            <source src="assets/LoginBackground.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        
-        <div class="overlay"></div>
-
         
         <div class="form-card">
             <h2 class="form-title">Welcome to Cake Town!</h2>
@@ -104,5 +117,6 @@
 
     
     <script type="module" src="auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </body>
 </html>
